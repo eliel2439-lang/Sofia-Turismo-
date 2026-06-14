@@ -227,12 +227,12 @@
             <div class="relative overflow-hidden" style="min-height: 92vh; background: #000;">
 
                 <!-- VÍDEO DE FUNDO -->
-                <video autoplay muted loop playsinline style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1; opacity:0.55;">
+                <video autoplay muted loop playsinline style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1; opacity:0.90;">
                     <source src="videios/video-hero.mp4" type="video/mp4">
                 </video>
 
                 <!-- Escurecimento para legibilidade do texto -->
-                <div class="absolute inset-0" style="z-index:2; background: linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.2) 100%);"></div>
+                <div class="absolute inset-0" style="z-index:2; background: linear-gradient(to right, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.08) 100%);"></div>
 
                 <!-- Gradiente dourado sutil -->
                 <div class="absolute inset-0" style="z-index:3; background: radial-gradient(ellipse at 60% 50%, rgba(212,175,55,0.06) 0%, transparent 65%);"></div>
@@ -326,11 +326,7 @@
 
             <!-- CARROSSEL DE PRODUTOS - DESTAQUE CENTRAL -->
             <div class="py-20 border-t border-gray-800" style="position:relative; overflow: hidden; background:#000;">
-                <!-- Vídeo de fundo Serviços -->
-                <video autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.70;">
-                    <source src="videios/video-servicos.mp4" type="video/mp4">
-                </video>
-                <div style="position:absolute;inset:0;background:rgba(0,0,0,0.38);z-index:1;"></div>
+
                 <div style="position:relative;z-index:2;">
                 <div class="container mx-auto px-6">
                     <div class="mb-12 text-center">
@@ -421,9 +417,9 @@
             (function(){
                 const servicos = [
                     { nome: "Excursões bate-volta",            img: "imagens/servico-excursoes.jpeg", desc: "Aproveite o dia com viagens rápidas e seguras para os melhores destinos turísticos.", wa: "Excurs%C3%B5es%20bate-volta" },
-                                        { nome: "Traslado para aeroportos",        img: "imagens/servico-aeroportos.jpeg", desc: "Viagens programadas e seguras para garantir que não perde o seu voo.", wa: "Traslado%20para%20aeroportos" },
+                                        { nome: "Traslado para aeroportos",        img: "imagens/servico-aeroportos.jpeg", desc: "Viagens programadas e seguras para garantir que não perca seu voo.", wa: "Traslado%20para%20aeroportos" },
                     { nome: "Transporte para shows e eventos", img: "imagens/servico-shows.jpeg", desc: "Vá e volte do seu evento favorito sem preocupações com o trânsito.", wa: "Transporte%20para%20shows%20e%20eventos" },
-                    { nome: "Viagens para praias e parques",   img: "imagens/servico-praias.jpeg", desc: "Conforto para a sua família e amigos nas viagens de lazer e descanso.", wa: "Viagens%20para%20praias%20e%20parques" },
+                    { nome: "Viagens para praias e parques",   img: "imagens/servico-praias.jpeg", desc: "Conforto para sua família e amigos nas viagens de lazer e descanso.", wa: "Viagens%20para%20praias%20e%20parques" },
                                         { nome: "Feiras e excursões",              img: "imagens/servico-feiras.jpeg", desc: "Transporte organizado para feiras, convenções e passeios em grupo.", wa: "Feiras%20e%20excurs%C3%B5es" },
                     { nome: "Casamentos e festas",             img: "imagens/servico-casamentos.jpeg", desc: "Transporte elegante e pontual para o dia mais especial da sua vida.", wa: "Casamentos%20e%20festas" },
                     { nome: "Igrejas e escolas",               img: "imagens/servico-igrejas.jpeg", desc: "Soluções de transporte para grupos religiosos e escolares.", wa: "Igrejas%20e%20escolas" },
@@ -508,16 +504,12 @@
 
             <!-- CARROSSEL 3D DA FROTA -->
             <div class="py-20 border-t border-gray-800" style="position:relative; overflow: hidden; background:#000;">
-                <!-- Vídeo de fundo Frota -->
-                <video autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.70;">
-                    <source src="videios/video-frota.mp4" type="video/mp4">
-                </video>
-                <div style="position:absolute;inset:0;background:rgba(0,0,0,0.38);z-index:1;"></div>
+
                 <div style="position:relative;z-index:2;">
                 <div class="container mx-auto px-6">
                     <div class="mb-12 text-center">
                         <h2 class="text-3xl font-extrabold text-white uppercase mb-2">Frota de Ônibus Executivos para Fretamento em SP</h2>
-                        <h3 class="text-gray-300 font-light text-base mt-1">18 veículos: ônibus executivos, convencionais, semi-leito, double-decker e vans — Sofia Turismo Guarulhos SP</h3>
+                        <h3 class="text-gray-300 font-light text-base mt-1">18 veículos: ônibus executivos, convencionais, semi-leito, rodoviário e vans — Sofia Turismo Guarulhos SP</h3>
                         <div class="w-20 h-1 bg-ns-primary mt-4 mx-auto rounded"></div>
                         <a href="#frota" onclick="navegar('frota'); return false;" class="inline-block mt-6 px-8 py-3 border-2 border-ns-primary text-ns-primary font-bold uppercase tracking-widest rounded-full hover:bg-ns-primary hover:text-black transition-all duration-300 text-sm">
                             Ver Frota Completa →
@@ -557,7 +549,7 @@
                     { nome: "Ônibus 2703", img: "imagens/frota-2703.jpeg",  placa: "APJ6B10",  tipo: "Rodoviário",    marca: "Marcopolo",               desc: "Ônibus rodoviário azul/prata. Conforto e segurança para longas viagens.",        wa: "%C3%94nibus%202703%20Rodovi%C3%A1rio" },
                     { nome: "Ônibus 2704", img: "imagens/frota-2704.jpeg",  placa: "DTC0F67",  tipo: "Rodoviário",    marca: "Marcopolo",               desc: "Ônibus rodoviário branco/prata. Ideal para fretamento e excursões.",             wa: "%C3%94nibus%202704%20Rodovi%C3%A1rio" },
                     { nome: "Ônibus 2807", img: "imagens/frota-2807.jpeg",  placa: "CVP9H47",  tipo: "Executivo",     marca: "IRIZAR",                  desc: "Executivo preto/grafite. Alto padrão, poltronas executivas e ar-condicionado.",  wa: "%C3%94nibus%202807%20Executivo" },
-                    { nome: "Ônibus 2808", img: "imagens/frota-2808.jpeg",  placa: "JRM-2088", tipo: "Double-Decker", marca: "BUSSCAR",                 desc: "2 andares, alta capacidade. Preto. Destaque visual e máximo conforto.",           wa: "%C3%94nibus%202808%20Double-Decker" },
+                    { nome: "Ônibus 2808", img: "imagens/frota-2808.jpeg",  placa: "JRM-2088", tipo: "Rodoviário", marca: "BUSSCAR",                 desc: "Alta capacidade. Preto. Destaque visual e máximo conforto.",           wa: "%C3%94nibus%202808%20Rodoviário" },
                     { nome: "Ônibus 2811", img: "imagens/frota-2811.jpeg",  placa: "IPD6E71",  tipo: "Semi Leito",    marca: "Marcopolo",               desc: "42 lugares semi-leito. Poltronas reclináveis para viagens noturnas.",             wa: "%C3%94nibus%202811%20Semi%20Leito" },
                     { nome: "Ônibus 2901", img: "imagens/frota-2901.jpeg",  placa: "MSH9H50",  tipo: "Rodoviário",    marca: "Marcopolo Paradiso 1800", desc: "Executivo rodoviário azul. Alto padrão para viagens de longa distância.",        wa: "%C3%94nibus%202901%20Rodovi%C3%A1rio" },
                     { nome: "Ônibus 2905", img: "imagens/frota-2905.jpeg",  placa: "HGJ1E17",  tipo: "Rodoviário",    marca: "NEOBUS",                  desc: "Rodoviário preto. Confortável, seguro e ideal para fretamento.",                  wa: "%C3%94nibus%202905%20Rodovi%C3%A1rio" },
@@ -570,7 +562,7 @@
                     'Executivo':     'background:#7c3aed;color:#fff',
                     'Convencional':  'background:#1d4ed8;color:#fff',
                     'Rodoviário':    'background:#D4AF37;color:#000',
-                    'Double-Decker': 'background:#d97706;color:#000',
+                    'Rodoviário': 'background:#d97706;color:#000',
                     'Semi Leito':    'background:#4338ca;color:#fff',
                     'Van Executiva': 'background:#15803d;color:#fff',
                     'Van':           'background:#15803d;color:#fff',
@@ -654,10 +646,7 @@
 
             <!-- CARROSSEL DE AVALIAÇÕES 3D -->
             <div class="py-16 border-t border-gray-800" style="position:relative; overflow:hidden; background:#000;">
-                <video autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.70;">
-                    <source src="videios/video-avaliacoes.mp4" type="video/mp4">
-                </video>
-                <div style="position:absolute;inset:0;background:rgba(0,0,0,0.38);z-index:1;"></div>
+
                 <div style="position:relative;z-index:2;">
                 <div class="container mx-auto px-6">
                     <div class="mb-12 text-center">
@@ -776,7 +765,7 @@
                     <div class="text-gray-300 leading-relaxed space-y-6 text-lg text-center md:text-left max-w-4xl mx-auto">
                         <p>A Sofia Turismo nasceu a 22 de janeiro de 2004 com o compromisso de oferecer viagens, excursões e serviços de transporte com conforto, segurança e qualidade.</p>
                         <p>Ao longo dos anos, construímos uma trajetória baseada na confiança, pontualidade e no atendimento próximo aos nossos clientes, sempre procurando proporcionar experiências tranquilas e agradáveis em cada viagem.</p>
-                        <p>Com uma equipa preparada e foco total na satisfação dos passageiros, a Sofia Turismo atende excursões, viagens em grupo, eventos, empresas e diversos tipos de transporte, prezando sempre pela segurança e excelência em cada serviço realizado.</p>
+                        <p>Com uma equipe preparada e foco total na satisfação dos passageiros, a Sofia Turismo atende excursões, viagens em grupo, eventos, empresas e diversos tipos de transporte, prezando sempre pela segurança e excelência em cada serviço realizado.</p>
                         <p>Mais do que transportar pessoas, o nosso objetivo é conectar histórias, destinos e momentos especiais com responsabilidade e dedicação.</p>
                     </div>
                     
@@ -835,7 +824,7 @@
                             <div class="h-60 overflow-hidden"><img src="imagens/servico-esportes.jpeg" alt="Transporte para competições esportivas" class="w-full h-full object-cover"></div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <h4 class="text-xl font-bold text-white mb-3">Transporte para competições esportivas</h4>
-                                <p class="text-sm text-gray-400 mb-6 flex-grow">Autocarros confortáveis e seguros para levar a sua equipa e adeptos com toda a tranquilidade.</p>
+                                <p class="text-sm text-gray-400 mb-6 flex-grow">Ônibus confortáveis e seguros para levar a sua equipe e torcedores com toda a tranquilidade.</p>
                                 <a href="https://wa.me/5511947314431?text=Olá,%20Sofia%20Turismo,%20gostaria%20de%20mais%20informações%20sobre%20Transporte%20para%20competições%20esportivas" target="_blank" class="mt-auto w-full bg-ns-primary text-black py-3 rounded font-bold text-sm hover:bg-ns-primaryDark transition shadow-sm block text-center">Pedir Orçamento</a>
                             </div>
                         </div>
@@ -887,7 +876,7 @@
                             <div class="h-60 overflow-hidden"><img src="imagens/servico-compras.jpeg" alt="Viagens para compras" class="w-full h-full object-cover"></div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <h4 class="text-xl font-bold text-white mb-3">Viagens para compras</h4>
-                                <p class="text-sm text-gray-400 mb-6 flex-grow">Espaço de sobra para as suas bagagens em viagens organizadas focadas em centros comerciais.</p>
+                                <p class="text-sm text-gray-400 mb-6 flex-grow">Espaço de sobra para as bagagens em viagens organizadas focadas em centros comerciais.</p>
                                 <a href="https://wa.me/5511947314431?text=Olá,%20Sofia%20Turismo,%20gostaria%20de%20mais%20informações%20sobre%20Viagens%20para%20compras" target="_blank" class="mt-auto w-full bg-ns-primary text-black py-3 rounded font-bold text-sm hover:bg-ns-primaryDark transition shadow-sm block text-center">Pedir Orçamento</a>
                             </div>
                         </div>
@@ -919,7 +908,7 @@
                             <div class="h-60 overflow-hidden"><img src="imagens/servico-casamentos.jpeg" alt="Transporte para casamentos e festas" class="w-full h-full object-cover"></div>
                             <div class="p-6 flex flex-col flex-grow">
                                 <h4 class="text-xl font-bold text-white mb-3">Transporte para casamentos e festas</h4>
-                                <p class="text-sm text-gray-400 mb-6 flex-grow">Garanta que todos os seus convidados chegam e regressam em segurança após a celebração.</p>
+                                <p class="text-sm text-gray-400 mb-6 flex-grow">Garanta que todos os seus convidados chegam e voltam em segurança após a celebração.</p>
                                 <a href="https://wa.me/5511947314431?text=Olá,%20Sofia%20Turismo,%20gostaria%20de%20mais%20informações%20sobre%20Transporte%20para%20casamentos%20e%20festas" target="_blank" class="mt-auto w-full bg-ns-primary text-black py-3 rounded font-bold text-sm hover:bg-ns-primaryDark transition shadow-sm block text-center">Pedir Orçamento</a>
                             </div>
                         </div>
@@ -957,7 +946,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Turismo & Dicas</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">As 7 Maiores Vantagens do Fretamento de Ônibus Executivo para Viagens em Grupo</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Fretamento · Ônibus Executivo · SP</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Viajar em grupo é sempre uma experiência marcante. Descubra por que o fretamento de um autocarro executivo é a melhor escolha em conforto, economia e segurança rodoviária.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Viajar em grupo é sempre uma experiência marcante. Descubra por que o fretamento de um ônibus executivo é a melhor escolha em conforto, economia e segurança rodoviária.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -975,7 +964,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Excursões</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">Como Organizar uma Excursão Bate-Volta Inesquecível Saindo de São Paulo</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Excursão · Bate-Volta · São Paulo</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Quer fugir da rotina sem gastar muito tempo? Um bate-volta é a solução ideal. Veja o nosso guia completo para organizar excursões de autocarro perfeitas para o fim de semana.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Quer fugir da rotina sem gastar muito tempo? Um bate-volta é a solução ideal. Veja o nosso guia completo para organizar excursões de ônibus perfeitas para o fim de semana.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -993,7 +982,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Empresas</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">Fretamento Corporativo em SP: Por que Investir no Transporte dos Colaboradores?</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Fretamento Corporativo · Empresas · SP</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">A produtividade da sua equipa começa no trajeto para o trabalho. Entenda como o fretamento corporativo reduz atrasos, aumenta o bem-estar e retém talentos fundamentais.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">A produtividade da sua equipe começa no trajeto para o trabalho. Entenda como o fretamento corporativo reduz atrasos, aumenta o bem-estar e retém talentos fundamentais.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -1011,7 +1000,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Destinos</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">5 Praias do Litoral de SP Ideais para Excursão de Ônibus em Grupo</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Excursão · Praia · Litoral SP</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">A pensar em levar a família ou amigos para a praia? Selecionamos os melhores destinos no litoral paulista que possuem excelente infraestrutura para receber autocarros de turismo.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">A pensar em levar a família ou amigos para a praia? Selecionamos os melhores destinos no litoral paulista que possuem excelente infraestrutura para receber ônibus de turismo.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -1047,7 +1036,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Dicas aos Viajantes</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">Dicas Essenciais para Viagens Longas de Ônibus Executivo com Conforto</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Dicas · Viagem Longa · Ônibus Executivo</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Viajar por muitas horas exige preparação. Reunimos dicas valiosas sobre conforto, alongamentos e entretenimento para tornar a sua viagem longa no autocarro muito mais relaxante.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Viajar por muitas horas exige preparação. Reunimos dicas valiosas sobre conforto, alongamentos e entretenimento para tornar a sua viagem longa no ônibus muito mais relaxante.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -1065,7 +1054,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Eventos Especiais</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">Transporte para Casamentos em SP: Como Organizar o Fretamento dos Convidados</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Casamentos · Fretamento · São Paulo</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Não deixe que o trânsito ou o álcool atrapalhem o dia mais feliz da sua vida. Descubra como o fretamento de um autocarro executivo resolve a logística dos seus convidados de forma elegante.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Não deixe que o trânsito ou o álcool atrapalhem o dia mais feliz da sua vida. Descubra como o fretamento de um ônibus executivo resolve a logística dos seus convidados de forma elegante.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -1101,7 +1090,7 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-2">Dicas aos Viajantes</span>
                             <h3 class="text-2xl font-bold text-white mb-2 leading-snug">O Que Levar na Bagagem de Mão em Viagens de Ônibus Executivo</h3><p class="text-ns-primary text-xs font-bold uppercase tracking-wider mb-3">Bagagem · Dicas · Ônibus Executivo</p>
-                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Saber o que levar consigo na cabina faz toda a diferença na qualidade da viagem. Confira o nosso checklist definitivo para a sua bagagem de mão em autocarros de turismo longos.</p>
+                            <p class="text-gray-400 text-base mb-5 leading-relaxed">Saber o que levar consigo na cabina faz toda a diferença na qualidade da viagem. Confira o nosso checklist definitivo para a sua bagagem de mão em ônibus de turismo longos.</p>
                             <button class="text-ns-primary font-bold text-sm uppercase mt-auto text-left hover:text-white transition">Ler Artigo Completo &rarr;</button>
                             <div class="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-800">
                                 <a href="#servicos" onclick="navegar('servicos'); return false;" class="flex items-center gap-1 text-xs text-ns-primary font-bold uppercase tracking-wide hover:text-white transition">
@@ -1144,9 +1133,9 @@
                     <article id="artigo-1" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">As 7 Maiores Vantagens do Aluguer de Ônibus Executivo para Viagens em Grupo</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>Organizar uma viagem para muitas pessoas pode ser um verdadeiro desafio logístico. Quando amigos, familiares ou colegas de trabalho decidem embarcar numa aventura juntos, a primeira grande questão que surge é: <strong class="text-white">como todos vão chegar ao destino?</strong> A resposta mais inteligente, segura e económica para esse dilema é o fretamento de um autocarro executivo (ônibus executivo).</p>
+                            <p>Organizar uma viagem para muitas pessoas pode ser um verdadeiro desafio logístico. Quando amigos, familiares ou colegas de trabalho decidem embarcar numa aventura juntos, a primeira grande questão que surge é: <strong class="text-white">como todos vão chegar ao destino?</strong> A resposta mais inteligente, segura e económica para esse dilema é o fretamento de um ônibus executivo (ônibus executivo).</p>
                             
-                            <p>No turismo rodoviário, optar pelo aluguer de autocarros para excursões transforma completamente a dinâmica da viagem. Em vez do stress de dezenas de condutores a tentarem seguir a mesma rota ou do custo exorbitante de passagens individuais, o fretamento centraliza e simplifica tudo, mantendo o grupo unido desde o quilómetro zero.</p>
+                            <p>No turismo rodoviário, optar pelo aluguer de ônibus para excursões transforma completamente a dinâmica da viagem. Em vez do stress de dezenas de condutores a tentarem seguir a mesma rota ou do custo exorbitante de passagens individuais, o fretamento centraliza e simplifica tudo, mantendo o grupo unido desde o quilómetro zero.</p>
                             
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">1. Economia que Faz a Diferença</h3>
                             <p>Ao dividir o custo total do fretamento de um ônibus executivo pelo número de passageiros, o valor individual torna-se incrivelmente atrativo. Se compararmos com o gasto de combustível, portagens e o desgaste de vários carros particulares, a economia gerada pode ser reinvestida em passeios, restaurantes ou atrações locais no seu destino de turismo.</p>
@@ -1155,10 +1144,10 @@
                             <p>Longe vão os dias de viagens desconfortáveis. A frota moderna da Sofia Turismo, focada no fretamento rodoviário de qualidade, oferece poltronas reclináveis de alto padrão, amplo espaço para as pernas, ar condicionado central rigoroso e WC devidamente higienizados. Viajar em grupo significa poder descansar de verdade e desfrutar das comodidades sem preocupações com as estradas sinuosas de São Paulo e arredores.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">3. Integração e Convívio Imediato</h3>
-                            <p>Quando o grupo se divide em carros pequenos, a diversão só começa no destino. Numa excursão de autocarro, a viagem em si já é o grande evento. O amplo espaço partilhado promove a interação, conversas vibrantes e a criação de memórias partilhadas incríves ao longo das horas na autoestrada, fortalecendo laços quer sejam corporativos, religiosos ou familiares.</p>
+                            <p>Quando o grupo se divide em carros pequenos, a diversão só começa no destino. Numa excursão de ônibus, a viagem em si já é o grande evento. O amplo espaço partilhado promove a interação, conversas vibrantes e a criação de memórias partilhadas incríves ao longo das horas na autoestrada, fortalecendo laços quer sejam corporativos, religiosos ou familiares.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">4. Logística Personalizada e Flexibilidade de Rotas</h3>
-                            <p>Diferente das linhas regulares de viação com horários e paragens rígidas, ao alugar um autocarro privado, o itinerário é desenhado à sua medida. O grupo define o horário exato de partida, os locais de embarque, as paragens fotográficas ou para refeições e o destino. Essa flexibilidade é a chave do sucesso para excursões de turismo bate-volta ou retiros longos.</p>
+                            <p>Diferente das linhas regulares de viação com horários e paradas rígidas, ao alugar um ônibus fretado, o itinerário é planejado à sua medida. O grupo define o horário exato de partida, os locais de embarque, as paradas fotográficas ou para refeições e o destino. Essa flexibilidade é a chave do sucesso para excursões de turismo bate-volta ou retiros longos.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">5. Sustentabilidade e Meio Ambiente (Menos Pegada Ecológica)</h3>
                             <p>Um facto valioso: transportar 40 a 50 pessoas num único veículo de grande porte emite uma fração incrivelmente menor de gases poluentes comparado com o cenário dessas mesmas pessoas viajarem em 15 carros particulares diferentes. É uma escolha de mobilidade ecológica que ajuda a reduzir os enormes engarrafamentos e protege as vias.</p>
@@ -1169,9 +1158,9 @@
 
                     <!-- ARTIGO 2 -->
                     <article id="artigo-2" class="hidden text-gray-300">
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Como Planear uma Excursão Bate-Volta Inesquecível Saindo de São Paulo</h2>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Como Organizar uma Excursão Bate-Volta Inesquecível Saindo de São Paulo</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>O conceito de turismo "bate-volta" transformou a maneira como muitas pessoas desfrutam dos seus parcos fins de semana e feriados. Trata-se daquela viagem cirúrgica: saímos de madrugada bem cedo, aproveitamos de forma intensa um destino turístico maravilhoso durante o dia inteiro e, ao cair da tarde, embarcamos confortavelmente de regresso a casa para dormirmos nas nossas próprias camas. A magia e o sucesso desta logística relâmpago reside no planeamento estruturado e no transporte adequado escolhido.</p>
+                            <p>O conceito de turismo "bate-volta" transformou a maneira como muitas pessoas desfrutam dos seus parcos fins de semana e feriados. Trata-se daquela viagem cirúrgica: saímos de madrugada bem cedo, aproveitamos de forma intensa um destino turístico maravilhoso durante o dia inteiro e, ao cair da tarde, embarcamos confortavelmente de regresso a casa para dormirmos nas nossas próprias camas. A magia e o sucesso desta logística relâmpago reside no planejamento estruturado e no transporte adequado escolhido.</p>
 
                             <p>Se está encarregado de reunir amigos, montar um grupo no seu bairro ou até motivar a sua empresa para uma viagem de excursão rápida, confira este guia para garantir que o seu evento seja perfeito e não acumule cansaço desnecessário!</p>
 
@@ -1185,7 +1174,7 @@
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">3. Transparência nos Horários e Limites</h3>
                             <p>Se está na posição de organizador da excursão turística, a disciplina horária é o seu maior trunfo. Comunique exaustivamente as horas exatas da concentração e defina um tempo de tolerância para atrasos curtíssimo. Num bate-volta, cada minuto de atraso significa menos um mergulho no mar ou menos tempo num parque.</p>
 
-                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Uma viagem de bate-volta requer autocarros de extrema fiabilidade para que nada falhe. Conte com o vasto serviço de fretamento executivo e motoristas especializados da <strong>Sofia Turismo</strong> para assegurar toda a pontualidade e o vigor da sua próxima grande aventura num só dia!</p>
+                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Uma viagem de bate-volta requer ônibus de extrema fiabilidade para que nada falhe. Conte com o vasto serviço de fretamento executivo e motoristas especializados da <strong>Sofia Turismo</strong> para assegurar toda a pontualidade e o vigor da sua próxima grande aventura num só dia!</p>
                         </div>
                     </article>
 
@@ -1193,20 +1182,20 @@
                     <article id="artigo-3" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Fretamento Corporativo: Por que Investir no Transporte dos Seus Colaboradores?</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>A rentabilidade e a produtividade orgânica de qualquer grande empresa começam muito antes do colaborador efetuar o login ou bater o ponto na fábrica; iniciam-se no preciso momento em que ele tranca a porta da sua casa. Enfrentar os desgastes do transporte público sobrelotado, constantes falhas nos comboios ou o stress mental impiedoso do trânsito da Grande São Paulo e Guarulhos são fatores conhecidos que exaurem a força laboral de uma equipa.</p>
+                            <p>A rentabilidade e a produtividade orgânica de qualquer grande empresa começam muito antes do colaborador registrar o ponto na empresa; iniciam-se no preciso momento em que ele tranca a porta da sua casa. Enfrentar os desgastes do transporte público lotado, constantes falhas nos trens ou o stress mental impiedoso do trânsito da Grande São Paulo e Guarulhos são fatores conhecidos que exaurem a força de trabalho de uma equipe.</p>
 
-                            <p>O conceito de transporte corporativo contínuo através de linhas fretadas deixou de ser um simples luxo elitista e assumiu a liderança como a mais poderosa estratégia na retenção de equipas nos Recursos Humanos modernos. Se a sua gestão financeira ainda debatem sobre o assunto, entenda profundamente os benefícios reais envolvidos.</p>
+                            <p>O conceito de transporte corporativo contínuo através de linhas fretadas deixou de ser um simples luxo elitista e assumiu a liderança como a mais poderosa estratégia na retenção de equipes nos RH moderno. Se sua gestão financeira ainda debatem sobre o assunto, entenda profundamente os benefícios reais envolvidos.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Fim dos Atrasos Diários e Ganhos na Produtividade</h3>
                             <p>A vantagem imediata visualizada pela gestão ao contratar linhas rodoviárias contínuas (fretamento) é a extinção em massa dos atrasos dos funcionários. Ao programar rotas inteligentes com as empresas de ônibus, as linhas recolhem os trabalhadores de forma orquestrada, e nenhum colaborador fica exposto ao fator surpresa da mobilidade urbana falida. Todos desembarcam pontualmente nos portões da empresa, descansados do trajeto e prontos para funções intelectuais ou físicas elevadas.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Qualidade de Vida e Mitigação do "Burnout"</h3>
-                            <p>Não há salários que compensem um desgaste diário de três ou quatro horas em más condições. O autocarro executivo providencia assentos marcados, climatização e estabilidade. Os colaboradores frequentemente utilizam estas preciosas horas do fretamento para dormir, finalizar estudos académicos ou mesmo ler um livro. O impacto direto disto na saúde mental é extraordinário, diminuindo vertiginosamente o atrito laboral, as falhas de atenção operacionais e o absentismo crónico.</p>
+                            <p>Não há salários que compensem um desgaste diário de três ou quatro horas em más condições. O ônibus executivo providencia assentos marcados, climatização e estabilidade. Os colaboradores frequentemente utilizam estas preciosas horas do fretamento para dormir, finalizar estudos acadêmicos ou mesmo ler um livro. O impacto direto disto na saúde mental é extraordinário, diminuindo vertiginosamente o atrito de trabalho, as falhas de atenção operacionais e o absentismo crónico.</p>
 
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Proteção Sanitária e Segurança Patrimonial</h3>
-                            <p>Um autocarro privado fecha a bolha sanitária do seu corpo corporativo, expondo drasticamente menos a sua equipa a picos virais urbanos, pois o ambiente é controlado e a higienização do veículo por parte da prestadora (como a Sofia Turismo) é atestada. Ademais, mitiga totalmente a exposição a assaltos em paragens de ônibus vazias nos turnos da noite profunda, um aspeto inegociável na responsabilidade social da empresa perante as suas equipas fabris noturnas.</p>
+                            <p>Um ônibus fretado protege seus colaboradores, reduzindo a exposição a vírus e doenças em ambientes fechados, pois o veículo é higienizado regularmente pela Sofia Turismo. Além disso, elimina o risco de assaltos em paradas de ônibus vazias nos turnos noturnos, um aspecto essencial na responsabilidade social da empresa com seus colaboradores.</p>
 
-                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Proporcione saúde ocupacional e transforme o trajeto da sua equipa num momento valioso de repouso. A frota contínua da <strong>Sofia Turismo</strong> elabora as melhores rotas corporativas e logísticas eficientes para otimizar os seus custos de recursos humanos. Peça a sua cotação empresarial hoje mesmo!</p>
+                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Proporcione saúde ocupacional e transforme o trajeto da sua equipe num momento valioso de repouso. A frota contínua da <strong>Sofia Turismo</strong> elabora as melhores rotas corporativas e logísticas eficientes para otimizar seus custos de recursos humanos. Solicite sua cotação empresarial hoje mesmo!</p>
                         </div>
                     </article>
 
@@ -1215,13 +1204,13 @@
 
                     <!-- ARTIGO 4 -->
                     <article id="artigo-4" class="hidden text-gray-300">
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">5 Destinos de Praia no Litoral de São Paulo Ideais para Excursões de Autocarro</h2>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">5 Destinos de Praia no Litoral de São Paulo Ideais para Excursões de Ônibus</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>O litoral paulista guarda algumas das mais belas extensões costeiras do Atlântico e a procura turística por estes polos não cessa. Contudo, quando se planeia uma excursão envolvendo transportes de passageiros de grandes dimensões como um ônibus fretado, não basta apenas o mar ser paradisíaco; as cidades têm de dispor de vias preparadas, áreas amplas para paragem de veículos grandes e estrutura massiva para alimentar a caravana.</p>
+                            <p>O litoral paulista guarda algumas das mais belas extensões costeiras do Atlântico e a procura turística por estes polos não cessa. Contudo, quando se planeia uma excursão envolvendo transportes de passageiros de grandes dimensões como um ônibus fretado, não basta apenas o mar ser paradisíaco; as cidades têm de dispor de vias preparadas, áreas amplas para estacionamento de veículos grandes e estrutura massiva para alimentar a caravana.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">1. Praia da Enseada no Guarujá</h3>
                             <p>Famosíssima e estruturalmente imensa, a Enseada acolhe as viagens de bate-volta devido à sua enorme extensão e calçadão perfeito. Os estacionamentos dedicados e a regulação simplificada para veículos turísticos tornam-na a eleição primordial dos paulistas ansiosos por mares rápidos.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">2. Maranduba em Ubatuba</h3>
-                            <p>O gigante do litoral norte, Ubatuba possui dezenas de baías, mas a Maranduba, com as suas águas calmas fantásticas para excursões com jovens e crianças, detém a estrutura exata à beira-mar de restaurantes abertos capazes de absorver cinquenta comensais oriundos dos autocarros simultaneamente.</p>
+                            <p>O gigante do litoral norte, Ubatuba possui dezenas de baías, mas a Maranduba, com as suas águas calmas fantásticas para excursões com jovens e crianças, detém a estrutura exata à beira-mar de restaurantes abertos capazes de absorver cinquenta comensais oriundos dos ônibus simultaneamente.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">3. Riviera de São Lourenço, Bertioga</h3>
                             <p>O acesso simples a partir das rodovias (evitando serras complexas) e a enorme faixa plana pavimentada ao redor tornam este setor num oásis seguro para passeios familiares tranquilos e com um excelente panorama de mobilidade.</p>
                             <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Embarque a sua caravana de verão a bordo das super máquinas da <strong>Sofia Turismo</strong>. Agendamentos efetuados atempadamente garantem os melhores veículos para o Litoral!</p>
@@ -1232,7 +1221,7 @@
                     <article id="artigo-5" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">A Importância da Segurança e Manutenção Preventiva no Transporte de Passageiros</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>Na contratação de serviços de turismo, o preço atrativo por vezes ofusca a única diretriz verdadeiramente não-negociável de uma viagem: a segurança estrutural profunda do equipamento rodoviário. O passageiro entra e desfruta do ar, sem conseguir enxergar o que sucede nos bastidores dos sistemas pneumáticos pesados de freios sob as suas pernas.</p>
+                            <p>Na contratação de serviços de turismo, o preço atrativo por vezes ofusca a única diretriz verdadeiramente não-negociável de uma viagem: a segurança estrutural profunda do equipemento rodoviário. O passageiro entra e viaja tranquilo, sem conseguir enxergar o que acontece por baixo dos sistemas sistemas de freio do veículo.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Preventiva, a Manutenção Inteligente</h3>
                             <p>Empresas profissionais evitam o método de "conserte apenas quando quebrar na pista". O alicerce da frota da Sofia Turismo dita trocas constantes de fluidos e pastilhas obedecendo rigidamente às grelhas dos fabricantes automóveis pesados, meses antes que a margem de desgaste máximo culmine em sinistros estressantes nas rodovias ou na perda das preciosas horas das suas férias nas oficinas de acostamento.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Homologações, ANT, EMTU e Seguro de Risco</h3>
@@ -1245,12 +1234,12 @@
                     <article id="artigo-6" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Guia de Sobrevivência: Dicas Essenciais para Viagens Longas de Ônibus</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>Existem excursões com rotas quilométricas imensas ao encontro dos pontos turísticos fantásticos sulistas do Brasil. Passar longas horas noturnas ininterruptas debaixo do mesmo teto rolante necessita de mais planeamento tático do que apenas pagar o bilhete e aparecer com as malas.</p>
+                            <p>Existem excursões com rotas quilométricas imensas ao encontro dos pontos turísticos fantásticos sulistas do Brasil. Passar longas horas noturnas ininterruptas debaixo do mesmo teto rolante necessita de mais planejamento tático do que apenas pagar o bilhete e aparecer com as malas.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Ergonomia e Conforto do Têxtil</h3>
                             <p>Mire o foco exclusivamente nos tecidos de elástano soltos. O frio inevitável noturno gerado no circuito fechado dos sistemas centrais de purificação impõe que seja mandatória a presença de meias e agasalho fechado na bagagem interior. Evite totalmente cintos justos, pois restringem severamente o fluxo basilar nas artérias nas posições fletidas durante a longa madrugadas nas retas escuras.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Os Elementos Chaves da Sacola Mágica</h3>
                             <p>Protetores de orelhas contra o barulho grave do asfalto, faixas tapa-olhos para criar uma cúpula de breu nas pupilas, e a famosa almofada pescoço (de espumas) formatam um escudo protetor contra o mundo caótico. Com o "kit do sono" e a poltrona macia, as 6 horas longas passam na fração de minutos perfeitamente dormidos até raiar o dia no local alvo do seu turismo.</p>
-                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Uma boa viagem é sempre uma viagem tranquila. Selecione os maravilhosos autocarros da <strong>Sofia Turismo</strong>, descanse confortavelmente sobre as frotas suaves e maravilhe-se com as vistas sem sacrifícios rodoviários.</p>
+                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Uma boa viagem é sempre uma viagem tranquila. Selecione os maravilhosos ônibus da <strong>Sofia Turismo</strong>, descanse confortavelmente sobre as frotas suaves e maravilhe-se com as vistas sem sacrifícios rodoviários.</p>
                         </div>
                     </article>
 
@@ -1271,7 +1260,7 @@
                     <article id="artigo-8" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Turismo Religioso no Brasil: Os Melhores Destinos para Viagens de Excursão</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>O sagrado abraça as estradas nacionais massivamente. Caravanas devocionais de autocarros cruzam incansavelmente os paralelos e meridianos transportando multidões pacíficas focadas em rezas paroquiais nos altares basilares grandiosos, espalhados belamente pelo interior.</p>
+                            <p>O sagrado abraça as estradas nacionais massivamente. Caravanas devocionais de ônibus cruzam incansavelmente os paralelos e meridianos transportando multidões pacíficas focadas em rezas paroquiais nos altares basilares grandiosos, espalhados belamente pelo interior.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Santuário de Nossa Senhora Aparecida (SP)</h3>
                             <p>O titã gigantesco católico recebe excursões incansáveis que preenchem de emoção o majestoso pátio do interior paulista no acolhedor Vale do Paraíba. Organizar a viagem sagrada nos modelos confortáveis cria o retiro da reza comunal desde a partida das paróquias paulistanas ou distantes fronteiras. Os fretamentos organizados simplificam a grandiosidade de todo esse ato divinal complexo de coordenação local massificada de fieis.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Unidade Focada a Bordo dos Assentos</h3>
@@ -1297,12 +1286,12 @@
                     <article id="artigo-10" class="hidden text-gray-300">
                         <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Os Enormes Benefícios do Transporte Universitário Fretado para Estudantes</h2>
                         <div class="space-y-6 text-lg leading-relaxed">
-                            <p>A graduação de ensino é a escalada mais complexa da vida, que por diversas vezes inclui o brutal revés de horas extenuantes pendurado nos varões inseguros na lotação instável dos ônibus locais durante o horário nobre urbano. O autocarro fretado focado de faculdade inverte drasticamente o calvário diário transformando-o num evento amigável de convivência profunda entre universitários e estudantes focados das turmas idênticas.</p>
+                            <p>A graduação de ensino é a escalada mais complexa da vida, que por diversas vezes inclui o brutal revés de horas extenuantes pendurado nos varões inseguros na superlotação dos ônibus locais durante o horário nobre urbano. O ônibus fretado focado de faculdade inverte drasticamente o calvário diário transformando-o num evento amigável de convivência profunda entre universitários e estudantes focados das turmas idênticas.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Economia Imensa e Amizade Constante</h3>
-                            <p>Os consórcios académicos formados em fretamento para campus aniquilam de modo estrondoso as faturas brutais nos pedágios, de avarias precoces ou o desespero inútil pago em multas rodoviárias e parques nos carros próprios esfolados, além de criarem verdadeiros ninhos interativos e ricos "networkings" a bordo entre profissionais emergentes nos anos dourados cursados de ensino.</p>
+                            <p>Os consórcios acadêmicos formados em fretamento para campus aniquilam de modo estrondoso as faturas brutais nos pedágios, de avarias precoces ou o desespero inútil pago em multas rodoviárias e parques nos carros próprios esfolados, além de criarem verdadeiros ninhos interativos e ricos "networkings" a bordo entre profissionais emergentes nos anos dourados cursados de ensino.</p>
                             <h3 class="text-2xl font-bold text-ns-primary mt-8 mb-4">Guarda Nobre na Calada da Noite Diária</h3>
                             <p>Encerrar cadeiras letivas no período sombrio da noite gera grande consternação a pais, mães ansiosas e alunos fatigados expostos nas praças isoladas desoladoras de ônibus púbicos demorados a cruzar os bairros. O fretamento contratado resguarda fortemente no assento fechado e na linha contínua que repousa os participantes salvos diretamente perto dos confortos no lar das portas residenciais do seu condomínio a salvo e relaxado sem pânicos contínuos e furtos comuns noturnos.</p>
-                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Abandone agora toda a preocupante agitação nas rotas acadêmicas longínquas. Centralize as equipas em consórcios rodoviários de fretamento confortáveis e seguros mediante a <strong>Sofia Turismo</strong> e eleve brilhantemente as ricas chances no término vitorioso do seu diploma com vigor intato!</p>
+                            <p class="mt-8 border-l-4 border-ns-primary pl-4 italic text-gray-400">Abandone agora toda a preocupante agitação nas rotas acadêmicas longínquas. Conte com serviços de fretamento confortáveis e seguros mediante a <strong>Sofia Turismo</strong> e eleve brilhantemente as chances de concluir seus estudos com sucesso!</p>
                         </div>
                     </article>
 
@@ -1397,7 +1386,7 @@
                 <!-- Cabeçalho -->
                 <div class="text-center mb-4">
                     <h1 class="text-3xl md:text-4xl font-extrabold text-white uppercase mb-3">Frota de <span class="text-ns-primary">Ônibus Executivos</span> — Sofia Turismo SP</h1>
-                    <h2 class="text-lg text-gray-400 font-light mt-2 mb-1">18 veículos modernos: ônibus executivos, convencionais, semi-leito, double-decker e vans para fretamento em São Paulo</h2>
+                    <h2 class="text-lg text-gray-400 font-light mt-2 mb-1">18 veículos modernos: ônibus executivos, convencionais, semi-leito, rodoviário e vans para fretamento em São Paulo</h2>
                     <div class="w-16 h-1 bg-ns-primary mx-auto mt-6 rounded"></div>
                 </div>
 
@@ -1638,14 +1627,14 @@
 
                     <div class="frota-card" data-categoria="rodoviario">
                         <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-ns-primary transition-all duration-300">
-                            <div class="h-64 relative overflow-hidden"><img src="imagens/frota-2808.jpeg" alt="Ônibus 2808" class="w-full h-full object-cover" onerror="this.parentElement.style.background='#1a1a1a';this.style.display='none'"><span class="absolute top-3 left-3 bg-yellow-600 text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Double-Decker</span><span class="absolute top-3 right-3 bg-gray-900 text-gray-300 text-xs font-semibold px-2 py-1 rounded">JRM-2088</span></div>
+                            <div class="h-64 relative overflow-hidden"><img src="imagens/frota-2808.jpeg" alt="Ônibus 2808" class="w-full h-full object-cover" onerror="this.parentElement.style.background='#1a1a1a';this.style.display='none'"><span class="absolute top-3 left-3 bg-ns-primary text-black text-xs font-bold px-3 py-1 rounded-full uppercase">Rodoviário</span><span class="absolute top-3 right-3 bg-gray-900 text-gray-300 text-xs font-semibold px-2 py-1 rounded">JRM-2088</span></div>
                             <div class="p-5">
                                 <div class="flex justify-between items-start mb-3">
                                     <h3 class="text-base font-bold text-white">Ônibus 2808</h3>
                                     <span class="text-xs text-gray-500 font-medium">BUSSCAR</span>
                                 </div>
                                 <div class="flex flex-col gap-2">
-                                <div class="flex items-center gap-2 text-gray-300 text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="1" y="2" width="22" height="9" rx="1" stroke-width="2"/><rect x="1" y="13" width="22" height="7" rx="1" stroke-width="2"/><circle cx="5.5" cy="20" r="1.5"/><circle cx="18.5" cy="20" r="1.5"/></svg><span>2 andares · Alta capacidade</span></div>
+                                <div class="flex items-center gap-2 text-gray-300 text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="1" y="2" width="22" height="9" rx="1" stroke-width="2"/><rect x="1" y="13" width="22" height="7" rx="1" stroke-width="2"/><circle cx="5.5" cy="20" r="1.5"/><circle cx="18.5" cy="20" r="1.5"/></svg><span>Rodoviário · Alta capacidade</span></div>
                                 <div class="flex items-center gap-2 text-gray-300 text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="1" y="6" width="22" height="12" rx="2" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M1 10h22"/><circle cx="5.5" cy="18" r="1.5"/><circle cx="18.5" cy="18" r="1.5"/></svg><span>Preto · Destaque visual</span></div>
                                 <div class="flex items-center gap-2 text-gray-300 text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/></svg><span>Ar-condicionado</span></div>
                                 <div class="flex items-center gap-2 text-gray-300 text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7H9a2 2 0 00-2 2v5a2 2 0 002 2h11m0-9V5a2 2 0 00-2-2H4a2 2 0 00-2 2v13a2 2 0 002 2h1"/></svg><span>Poltronas confortáveis</span></div>
@@ -1817,7 +1806,7 @@
                 <div>
                     <h3 class="text-xl font-bold text-ns-primary mb-4">Sofia Turismo</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Soluções em transporte de passageiros, viagens, excursões e fretamento de autocarros com total segurança.
+                        Soluções em transporte de passageiros, viagens, excursões e fretamento de ônibus com total segurança.
                     </p>
                 </div>
 
@@ -1894,7 +1883,7 @@
             },
             'servicos': {
                 title: "Serviços de Transporte | Sofia Turismo",
-                description: "Fretamento de autocarros, excursões, transporte corporativo, transfers para aeroportos e eventos."
+                description: "Fretamento de ônibus, excursões, transporte corporativo, transfers para aeroportos e eventos."
             },
             'frota': {
                 title: "Nossa Frota | Sofia Turismo",
@@ -2199,7 +2188,7 @@
         /* ── GRADE DOURADA ──────────────────────────────── */
         function drawGrid(){
             const cols=14, rows=9, cw=W/cols, ch=H/rows;
-            ctx.strokeStyle='rgba(212,175,55,0.032)';
+            ctx.strokeStyle='rgba(212,175,55,0.08)';
             ctx.lineWidth=1;
             for(let i=0;i<=cols;i++){ ctx.beginPath();ctx.moveTo(i*cw,0);ctx.lineTo(i*cw,H);ctx.stroke(); }
             for(let i=0;i<=rows;i++){ ctx.beginPath();ctx.moveTo(0,i*ch);ctx.lineTo(W,i*ch);ctx.stroke(); }
@@ -2212,7 +2201,7 @@
                 const angle=(i/16)*Math.PI*2 + t*0.0008;
                 const len=Math.max(W,H)*0.9;
                 const g=ctx.createLinearGradient(cx,cy, cx+Math.cos(angle)*len, cy+Math.sin(angle)*len);
-                g.addColorStop(0,'rgba(212,175,55,0.09)');
+                g.addColorStop(0,'rgba(212,175,55,0.20)');
                 g.addColorStop(1,'rgba(212,175,55,0)');
                 ctx.beginPath(); ctx.strokeStyle=g; ctx.lineWidth=0.8;
                 ctx.moveTo(cx,cy);
@@ -2343,7 +2332,7 @@
                 const radius=(ring*90)+Math.sin(t*0.018+ring)*14;
                 ctx.beginPath();
                 ctx.arc(cx,cy,radius,0,Math.PI*2);
-                ctx.strokeStyle=`rgba(212,175,55,${0.05-ring*0.008})`;
+                ctx.strokeStyle=`rgba(212,175,55,${0.10-ring*0.015})`;
                 ctx.lineWidth=1; ctx.stroke();
             }
         }
